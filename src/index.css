@@ -1,0 +1,113 @@
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-appear {
+  opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+div::-webkit-scrollbar {
+  width: 0.22rem;
+  height: 0.22rem;
+  background-color: transparent;
+}
+
+div::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 black;
+  background-color: transparent;
+}
+
+div {
+  font-size: calc(0.75vh + 0.75vw);
+}
+span {
+  font-size: calc(0.75vh + 0.75vw);
+}
+
+p {
+  font-size: calc(0.75vh + 0.75vw);
+}
+html {
+  font-size: calc(0.75vh + 0.75vw);
+  background-image: radial-gradient(#58687e, #39495e);
+}
+
+div::-webkit-scrollbar-thumb {
+  background-color: #5daae0;
+  border-radius: 50px;
+}
+
+/* ::-webkit-scrollbar-thumb:hover {
+            background: #7FDBFF;
+        } */
+
+body {
+  /* background-image: radial-gradient(#58687E, #39495E); */
+  font-family: 'Roboto';
+  font-size: '50%';
+  line-height: '1em';
+  margin: 0;
+  overflow: hidden;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+div {
+  scrollbar-color: #5daae0 transparent;
+  scrollbar-width: thin;
+}
